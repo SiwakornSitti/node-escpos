@@ -453,8 +453,7 @@ Printer.prototype.flush = function(callback){
  * @param  {[type]} part [description]
  * @return printer instance
  */
-Printer.prototype.cut = function(part, feed){
-  this.feed(feed || 3);
+Printer.prototype.cut = function(part){
   this.buffer.write(_.PAPER[
     part ? 'PAPER_PART_CUT' : 'PAPER_FULL_CUT'
   ]);
