@@ -6,6 +6,7 @@
 exports.Serial  = require('./adapter/serial');
 exports.Network = require('./adapter/network');
 exports.Console = require('./adapter/console');
+exports.USB = require('./adapter/usb');
 /**
  * Printer Supports
  */
